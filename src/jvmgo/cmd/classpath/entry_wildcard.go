@@ -22,6 +22,7 @@ func newWildcardEntry(path string) CompositeEntry {
 			jarEntry := newZipEntry(path)
 			compositeEntry = append(compositeEntry, jarEntry)
 		}
+		return nil
 	}
 	//调用filepath包的Walk()函数遍历baseDir创建ZipEntry
 	filepath.Walk(baseDir, walkFn)
