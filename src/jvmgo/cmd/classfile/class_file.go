@@ -86,11 +86,11 @@ func (self *ClassFile) AccessFlags() uint16 {
 	return self.accessFlags
 }
 
-func (self *ClassFile) Fields() []*MemberInfo{
+func (self *ClassFile) Fields() []*MemberInfo {
 	return self.fields
 }
 
-func (self *ClassFile) Methods() []*MemberInfo{
+func (self *ClassFile) Methods() []*MemberInfo {
 	return self.methods
 }
 
@@ -99,7 +99,7 @@ func (self *ClassFile) ClassName() string {
 }
 
 func (self *ClassFile) SuperClassName() string {
-	if self.superClass >0 {
+	if self.superClass > 0 {
 		return self.constantPool.getClassName(self.superClass)
 	}
 	return ""
@@ -116,10 +116,6 @@ func (self *ClassFile) readConstantPool(reader *ClassReader) {
 
 }
 
-func readMembers(reader *ClassReader, pool ConstantPool) []*MemberInfo{
-
-}
-
-func readAttributes(reader *ClassReader, pool ConstantPool) []AttributeInfo{
+func readAttributes(reader *ClassReader, pool ConstantPool) []AttributeInfo {
 
 }
