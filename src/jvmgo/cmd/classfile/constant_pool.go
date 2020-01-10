@@ -38,5 +38,5 @@ func (self ConstantPool) getClassName(index uint16) string {
 
 func (self ConstantPool) getUtf8(index uint16) string {
 	utf8Info := self.getConstantInfo(index).(*ConstantUtf8Info)
-	return utf8Info, str
+	return utf8Info.str
 }

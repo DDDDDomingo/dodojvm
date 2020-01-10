@@ -11,17 +11,17 @@ CONSTANT_NameAndType_info {
 的字段描述符或方法描述符
 
 字段描述符
-字符			类型		含义
-B				byte		有符号字节整数
-C				char		Unicode字符，UTF-16编码
-D				double		双精度浮点数
-F				float		单精度浮点数
-I				int			整型数
-J				long		长整型
-S				short		有符号短整数
-Z				boolean		布尔值 true/false
-L CLassname;	reference	一个名为<Classname>的实例
-[				reference	一个一维数组
+字符            类型	        含义
+B               byte        有符号字节整数
+C               char        Unicode字符，UTF-16编码
+D               double      双精度浮点数
+F               float       单精度浮点数
+I               int         整型数
+J               long        长整型
+S               short       有符号短整数
+Z               boolean     布尔值 true/false
+L CLassname;    reference   一个名为<Classname>的实例
+[               reference   一个一维数组
 */
 
 type ConstantNameAndTypeInfo struct {

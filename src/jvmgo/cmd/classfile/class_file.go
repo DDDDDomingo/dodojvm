@@ -2,7 +2,6 @@ package classfile
 
 import (
 	"fmt"
-	"strings"
 )
 
 type ClassFile struct {
